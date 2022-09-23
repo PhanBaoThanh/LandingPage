@@ -1,0 +1,19 @@
+@use '../../../root.scss';
+.lightContent{
+    padding: 48px 0;
+    height: 100%;
+    background-color: var(--lightContent);
+    color: var(--lightText);
+
+    .lightContent__header{
+        text-align: center;
+        font-size: 26px;
+        padding: 0;
+        margin-bottom: 48px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+}

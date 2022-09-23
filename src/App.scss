@@ -1,0 +1,6 @@
+@use './root.scss';
+
+.app{
+    overflow-x: hidden;
+    background-color: var(--backgroundColor);
+}

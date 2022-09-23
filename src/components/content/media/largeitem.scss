@@ -1,0 +1,65 @@
+@use '../../../root.scss';
+.largeItem{
+    padding: 12px;
+    border-radius: 12px;
+    height: 100%;
+    padding: 8px;
+    background-color: var(--featureItemBg);
+
+
+
+    .largeItem__img{
+        height: 300px;
+        cursor: pointer;
+        img{
+            width: 100%;
+            border-radius: 8px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .largeItem__text{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--darkContent);
+        .largeItem__text__header{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            margin: 8px 0;
+        }
+
+        .largeItem__text__description{
+            font-size: 13px;
+            line-height: 20px;
+            margin-bottom: 12px;
+            color: var(--featureText);
+
+        }
+
+        .largeItem__text__btn{
+            button{
+                padding: 8px 14px;
+                outline: none;
+                border-width: 2px;
+                border-style: solid;
+                border-radius: 8px;
+                font-size: 12px;
+                cursor: pointer;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: .2s;
+                background-color: transparent;
+                border-color: var(--buttonLightTextColor);
+                color: var(--buttonLightTextColor);
+                &:hover{
+                    background-color: var(--buttonLightHover);
+                    color: var(--buttonBgHover);
+                }
+            }
+        }
+    }
+}

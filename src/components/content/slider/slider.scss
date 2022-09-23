@@ -1,0 +1,160 @@
+@use '../../../root.scss';
+.slider{
+    position: relative;
+    height: 100vh;
+    margin-top: -85px;
+    display: flex;
+    .slider__box{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+        .slider__box__item{
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            .slider__box__items{
+                display: flex;
+                overflow: hidden;
+                transition: .3s;
+                .slider__box__item1{
+                    height: 100%;
+                    z-index: 10;
+                    transition: 3s;
+                    align-items: center;
+                    color: #fff;
+                    display: flex;
+                    overflow: hidden;
+                    
+                    .slider__box__text{
+                        padding-right: 26px;
+                        flex: 1;
+            
+                        .slider__box__text__header{
+                            font-size: 26px;
+                            color: var(--textHeader);
+                            margin-bottom: 8px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 1;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                        }
+            
+                        .slider__box__text__description{
+                            letter-spacing: -0.5px;
+                            margin-bottom: 24px;
+                            color: var(--textDescription);
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 3;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                        }
+            
+                        .slider__box__text__btn{
+                            outline: none;
+                            cursor: pointer;
+                            padding: 10px 16px;
+                            border-radius: 8px;
+                            font-size: 12px;
+                            border-width: 2px;
+                            border-style: solid;
+                            font-weight: 600;
+                            transition: .3s;
+                            background-color: transparent;
+                            border-color: var(--buttonColor);
+                            color: var(--buttonColor);
+
+                            &:hover{
+                                background-color: var(--buttonBgHover);
+                                color: var(--buttonTextHover);
+                            }
+            
+                          
+                        }
+                    }
+            
+                    .slider__box__img{
+                        flex: 1;
+                        position: relative;
+                        padding: 20px;
+                        height: 80%;
+    
+                        .slider__box__img__item{
+                            width: 100%;
+                            max-width: 30vw;
+                            margin: auto;
+                            height: 100%;
+                            border-radius: 16px;
+                            object-fit: cover;
+                        }
+            
+                        .circleFirst{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            border-radius: 50%;
+                            width: 100px;
+                            height: 100px;
+                            background-color: rgba(255, 255, 255, 0.373);
+                            cursor: pointer;
+    
+                            &:hover{
+                                opacity: .6;
+                            }
+            
+                            .circleSecond{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                border-radius: 50%;
+                                width: 70px;
+                                height: 70px;
+                                background-color: #fff;
+            
+                                .playBtn{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-43%,-45%);
+                                    font-size: 26px;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .slider__box__item2{
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+                z-index: 5;
+                .pageBtn{
+                    background-color: var(--pageBtn);
+                    width: 40px;
+                    margin-right: 8px;
+                    border-radius: 8px;
+                    height: 8px;
+                    transition: .2s;
+                    opacity: .23;
+                    cursor: pointer;
+
+                    &.selected{
+                        opacity: 1;
+                        width: 70px;
+                    }
+                }
+            }
+
+        }
+    }
+}

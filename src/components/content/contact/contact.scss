@@ -1,0 +1,139 @@
+@use '../../../root.scss';
+.contact{
+    padding: 48px 10vw;
+    color: var(--darkContent);
+    background-color: var(--logo);
+    .contact__box{
+        position: relative;
+        display: flex;
+        
+        .contact__img{
+            z-index: 3;
+            width: 40%;
+            position: relative;
+            padding: 0 16px 0 12px;
+            img{
+                width: 100%;
+                border-radius: 22px;
+                object-fit: cover;
+                height: 100%;
+            }
+    
+            .contact__circleFirst{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                background-color: rgba(255, 255, 255, 0.373);
+                cursor: pointer;
+
+                &:hover{
+                    opacity: .6;
+                }
+    
+                .contact__circleSecond{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    border-radius: 50%;
+                    width: 70px;
+                    height: 70px;
+                    background-color: #fff;
+    
+                    .contact__playBtn{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-43%,-45%);
+                        font-size: 26px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    
+        .contact__text{
+            width: 60%;
+            padding-left: 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+    
+            .contact__text__header{
+                font-size: 30px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 1;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+    
+            .contact__text__box{
+                color: var(--featureText);
+                
+                .contact__text__description{
+                    font-size: 12px;
+                    margin: 0;
+                    line-height: 18px;
+                    margin-bottom: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 5;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                }
+    
+                .contact__text__list{
+                    font-size: 12px;
+                    margin-left: 5%;
+                    li{
+                        margin-bottom: 4px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+    
+            .contact__text__btn{
+                button{
+                    padding: 8px 12px;
+                    border-radius: 10px;
+                    outline: none;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: .2s;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: var(--contactBtnBg);
+                    color: var(--contactText);
+                    background-color: var(--contactBtnBg);
+                    &:hover{
+                        background-color: var(--contactHoverBg);
+                        color: var(--contactHoverText);
+                    }
+                }
+            }
+        }
+    
+        .rotateItem{
+            width: 60%;
+            height: 115%;
+            position: absolute;
+            left: -25%;
+            bottom: -6%;
+            border-radius: 112px 20px 112px 112px;
+            transform: rotate(8.18deg);
+            background-color: var(--contactRotate);
+        }
+    }
+
+}

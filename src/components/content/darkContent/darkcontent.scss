@@ -1,0 +1,18 @@
+@use '../../../root.scss';
+.darkContent{
+    padding: 48px 10vw;
+    background-color: var(--darkContent);
+    color: var(--textColor);
+
+    .darkContent__header{
+        text-align: center;
+        font-size: 26px;
+        padding: 0;
+        margin-bottom: 48px;;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+}

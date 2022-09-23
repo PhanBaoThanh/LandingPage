@@ -1,0 +1,12 @@
+@use '../../../root.scss';
+.rotateBox1{
+    position: absolute;
+    top: -35%;
+    left: -15px;
+    right: 0;
+    height: 120vh;
+    width: 150vw;
+    background-color: var(--rotateBg1);
+    border-radius: 22%;
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(6deg);
+}

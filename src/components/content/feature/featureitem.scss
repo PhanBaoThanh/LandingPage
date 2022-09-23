@@ -1,0 +1,82 @@
+@use '../../../root.scss';
+.featureItem{
+    flex: 1;
+    padding: 0 14px;
+    .featureItemBox{
+        padding: 12px;
+        background-color: var(--featureItemBg);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+
+        .featureItem__img{
+            height: 60%;
+            height: 300px;
+            padding: 12px 20px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: over;
+            }
+        }
+
+        .featureItem__text{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            justify-content: center;
+            color: var(--darkContent);
+            .featureItem__text__header{
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                margin: 12px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 1;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            .featureItem__text__description{
+                font-size: 12px;
+                text-align: center;
+                color: var(--featureText);
+                margin-bottom: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            .featureItem__text__btn{
+                button{
+                    text-align: center;
+                    padding: 6px 10px;
+                    color: black;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-radius: 8px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    cursor: pointer;
+                    outline: none;
+                    font-weight: 600;
+                    transition: .2s;
+                    background-color: transparent;
+                    border-color: var(--buttonLightTextColor);
+                    color: var(--buttonLightTextColor);
+                    &:hover{
+                        background-color: var(--buttonLightHover);
+                        color: var(--buttonBgHover);
+                    }
+                }
+            }
+        }
+    }
+}

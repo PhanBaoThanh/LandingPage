@@ -1,0 +1,35 @@
+@use '../../../root.scss';
+.feature{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+
+    .featureBtn{
+        display: flex;
+        align-items: center;
+        z-index: 3;
+
+        .featureBtnItem{
+            padding: 8px;
+            cursor: pointer;
+
+            svg{
+                fill: var(--darkContent);
+            }
+        }
+    }
+
+    .featureItems{
+        flex: 1;
+        overflow-x: hidden;
+        
+        .featureItemsBox{
+            transition: .4s;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+
+
+}

@@ -1,0 +1,159 @@
+@use '../../root.scss';
+.footer{
+    background-color: #fff;
+    z-index: 10;
+    .footer__box{
+        background-color: var(--footerBg);
+        padding: 48px 0;
+        color: #fff;
+        z-index: 15;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        .footer__box__area{
+            display: flex;
+            justify-content: space-between;
+
+            .footer__contact{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .footer__contact__logo{
+                    font-size: 12px;
+                    width: 12px;
+                }
+    
+                .footer__contact__social{
+                    .footer__contact__social__header{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+    
+                    .footer__contact__social__items{
+                        display: flex;
+                        .footer__contact__social__item{
+                            position: relative;
+                            cursor: pointer;
+                            padding: 8px;
+                        }
+                    }
+                }
+    
+                .footer__contact__copyright{
+                    font-size: 10px;
+                    color: #ffffff7b;
+                    font-weight: 600;
+                    letter-spacing: 0.183333px;
+                }
+            }
+    
+            .footer__products{
+                .footer__products__header{
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+
+                .footer__products__list{
+                    list-style-type: none;
+                    .footer__product{
+                        font-size: 12px;
+                        opacity: .7;
+                        padding: 3px 0;
+                        cursor: default;
+        
+                        &.clicked{
+                            opacity: 1;
+                        }
+        
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+    
+            }
+    
+            .footer__services{
+                .footer__services__header{
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+
+                .footer__services__list{
+                    list-style-type: none;
+                    .footer__service{
+                        font-size: 12px;
+                        opacity: .7;
+                        padding: 3px 0;
+                        cursor: default;
+        
+                        &.clicked{
+                            opacity: 1;
+                        }
+        
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+    
+    
+            }
+    
+            .footer__info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .footer__info__header{
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+    
+                .footer__info__description{
+                    font-size: 12px;
+                    padding: 3px 0;
+                    cursor: default;
+                }
+    
+                .footer__info__copyright{
+                    justify-self: flex-start;
+                    font-size: 10px;
+                    color: #ffffff7b;
+                    font-weight: 600;
+                    letter-spacing: 0.183333px;
+    
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+    
+            .footer__imgs{
+                max-width: 25%;
+                display: flex;
+                flex-wrap: wrap;
+    
+                .footer__img{
+                    height: 50%;
+                    width: calc(100%/3);
+                    padding: 4px;
+    
+                    img{
+                        cursor: pointer;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 8px;
+                        &:hover{
+                            opacity: .6;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

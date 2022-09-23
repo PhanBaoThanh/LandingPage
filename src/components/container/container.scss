@@ -1,0 +1,10 @@
+.containerBox{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1580px){
+    .containerBox{
+        max-width: 1422px;
+    }
+}

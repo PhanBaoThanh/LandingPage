@@ -1,0 +1,75 @@
+:root{
+    --backgroundColor: #F5F5F5;
+    --textColor: #fff;
+    --footerBg: #000;
+    --darkContent: #000;
+    --lightContent: transparent;
+    --lightText: #111010;
+    --rotateBg1: #111010;
+    --rotateBg2: #383535;
+    --logo: #fff;
+    --pageBtn: #fff;
+    --textHeader: #fff;
+    --textDescription: #A4A4A4;
+    --button: #fff;
+    --buttonBgHover: #fff;
+    --buttonTextHover: #000;
+    --featureItemBg: #E3E3E3;
+    --buttonLightColor: #000;
+    --buttonLightTextColor: #000;
+    --buttonLightHover: #000;
+    --featureText: #3C3C3C;
+    --pageLightBtn: rgb(17, 16, 16);;
+    --contactBtnBg: #000;
+    --contactText:#fff;
+    --contactHoverBg: #fff;
+    --contactHoverText:#000;
+    --contactRotate: transparent;
+
+
+
+
+
+}
+
+[data-theme='dark'] {
+    --backgroundColor: #111010;
+    --textColor: #111010;
+    --footerBg: #313131;
+    --darkContent: #fff;
+    --lightContent: #111010;
+    --lightText: #fff;
+    --rotateBg1: #F3F3F3;
+    --rotateBg2: #FFFFFF;
+    --logo: #111010;
+    --pageBtn: rgb(17, 16, 16);
+    --textHeader: #111010;
+    --textDescription: #616161;
+    --buttonColor: #000;
+    --buttonBgHover: #000;
+    --buttonTextHover: #fff;
+    --featureItemBg: #313131;
+    --buttonLightColor: #fff;
+    --buttonLightTextColor: #fff;
+    --buttonLightHover: #fff;
+    --featureText: #AEAEAE;
+    --pageLightBtn: #fff;
+    --contactBtnBg: #fff;
+    --contactText:#000;
+    --contactHoverBg: #000;
+    --contactHoverText:#fff;
+    --contactRotate: #fff;
+
+
+
+
+
+
+    --darkBackgroundColor: #111010;
+    --rotateFirstColor: #F3F3F3;
+    --rotateSecondColor: #FFFFFF;
+    --lightBtn: #fff;
+    --contactColorDark: #838383;
+    --itemBgDark: #313131;
+    --servicesColorDark: #AEAEAE;
+}
